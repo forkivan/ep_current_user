@@ -1,0 +1,10 @@
+{
+  "parts": [
+    {
+      "name": "ep_current_user",
+      "hooks": {
+        "expressCreateServer": "ep_current_user/index"
+      }
+    }
+  ]
+}
