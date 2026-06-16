@@ -50,14 +50,19 @@ Optional. In `settings.json`:
 |--------|------------|----------------------|
 | `path` | `/whoami`  | URL of the endpoint. |
 
+## Requirements
+
+- **Etherpad** (`ep_etherpad-lite`).
+- **An authentication method that populates the login session** — e.g.
+  `requireAuthentication` together with
+  [`ep_openid_connect`](https://www.npmjs.com/package/ep_openid_connect).
+  Without it there is no logged-in user, so `/whoami` has nobody to report.
+
 ## Install
 
 ```sh
 cd /path/to/etherpad
 pnpm run plugins i ep_current_user
 ```
-
-> Has no effect unless authentication is configured (e.g. `requireAuthentication`
-> with `ep_openid_connect`) — otherwise there is no logged-in user to report.
 
 License: Apache-2.0.

@@ -1,7 +1,7 @@
 {
   "name": "ep_current_user",
   "description": "Exposes the current logged-in Etherpad user as JSON (a whoami endpoint). Lets your own external site or app find out who is signed in, based on the login session — works with auth plugins such as ep_openid_connect. Also exports getUser() for other plugins to reuse.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Ivan Forkaliuk",
     "url": "https://github.com/forkivan"
